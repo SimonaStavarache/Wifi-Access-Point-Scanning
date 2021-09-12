@@ -1,0 +1,28 @@
+# this is an auto generated file. This will be overwritten
+query GetWifiData($id: ID!) {
+  getWifiData(id: $id) {
+    id
+    SSID
+    BSSID
+    RSSI
+    frequency
+    GPS
+  }
+}
+query ListWifiDatas(
+  $filter: ModelWifiDataFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listWifiDatas(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      SSID
+      BSSID
+      RSSI
+      frequency
+      GPS
+    }
+    nextToken
+  }
+}

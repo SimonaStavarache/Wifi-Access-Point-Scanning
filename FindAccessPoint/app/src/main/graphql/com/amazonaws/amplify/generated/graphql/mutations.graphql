@@ -1,0 +1,40 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateWifiData(
+  $input: CreateWifiDataInput!
+  $condition: ModelWifiDataConditionInput
+) {
+  createWifiData(input: $input, condition: $condition) {
+    id
+    SSID
+    BSSID
+    RSSI
+    frequency
+    GPS
+  }
+}
+mutation UpdateWifiData(
+  $input: UpdateWifiDataInput!
+  $condition: ModelWifiDataConditionInput
+) {
+  updateWifiData(input: $input, condition: $condition) {
+    id
+    SSID
+    BSSID
+    RSSI
+    frequency
+    GPS
+  }
+}
+mutation DeleteWifiData(
+  $input: DeleteWifiDataInput!
+  $condition: ModelWifiDataConditionInput
+) {
+  deleteWifiData(input: $input, condition: $condition) {
+    id
+    SSID
+    BSSID
+    RSSI
+    frequency
+    GPS
+  }
+}

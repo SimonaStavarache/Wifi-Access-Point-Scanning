@@ -1,0 +1,8 @@
+type WifiData @model {
+  id: ID!
+  SSID: String!
+  BSSID: String
+  RSSI: Int
+  frequency: Int
+  GPS: String
+}

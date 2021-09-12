@@ -1,0 +1,26 @@
+{
+	"auth": {
+		"findaccesspointc4d656e3": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"findaccesspoint": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authfindaccesspointc4d656e3"
+						}
+					}
+				}
+			}
+		}
+	}
+}
